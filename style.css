@@ -103,10 +103,35 @@
 
 .ex-10-icon {
     font-size: 60px;
+    animation: circle 1s infinite;
 }
+
+@keyframes circle {
+    0% {
+        transform: rotate(1turn);
+    }
+}
+
 .ex-11-icon {
     font-size: 60px;
 }
+
+.ex-11-icon:hover {
+    animation: circle2 2s infinite;
+}
+
+@keyframes circle2 {
+    0% {
+        transform: rotate(0);
+    }
+    90% {
+        transform: rotate(315deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -135,4 +160,36 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+.ex-12-bottom:hover .ex-12-top-white {
+    animation: moveTopWhite 2s linear;
+}
+@keyframes moveTopWhite {
+    0% {
+        left: 5%;
+    }
+    50% {
+        left: 100%;
+    }
+    100%{
+        left: 10%;
+    }
+}
+
+.ex-12-bottom:hover .ex-12-bottom-white {
+    animation: movebottomwhite 1s linear;
+}
+@keyframes movebottomwhite {
+    0% {
+        right: 20%;
+    }
+
+    50% {
+        right: 100px;
+    }
+
+    100% {
+        right: 10px;
+    }
 }
