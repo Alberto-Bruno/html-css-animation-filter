@@ -167,10 +167,10 @@
 }
 @keyframes moveTopWhite {
     0% {
-        left: 5%;
+        left: 10%;
     }
     50% {
-        left: 100%;
+        left: calc(100% - 60px);
     }
     100%{
         left: 10%;
@@ -178,18 +178,18 @@
 }
 
 .ex-12-bottom:hover .ex-12-bottom-white {
-    animation: movebottomwhite 1s linear;
+    animation: moveBottomWhite 1s linear;
 }
-@keyframes movebottomwhite {
+@keyframes moveBottomWhite {
     0% {
         right: 20%;
     }
 
     50% {
-        right: 100px;
+        right: calc(100% - 60px);
     }
 
     100% {
-        right: 10px;
+        right: 20px;
     }
 }
